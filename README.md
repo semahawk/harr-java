@@ -78,7 +78,7 @@ What directories are what?
 </tr>
 <tr>
   <td><pre>test</pre></td>
-  <td>Test files that are ran by <pre>test/runner.rb</pre> after running <pre>ant</pre> or <pre>ant test</pre>.</td>
+  <td>Test files that are ran by <code>test/runner.rb</code> after running <code>ant</code> or <code>ant test</code>.</td>
 </tr>
 <tr>
   <td><pre>vendor</pre></td>
