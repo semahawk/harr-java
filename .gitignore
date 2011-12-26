@@ -1,0 +1,4 @@
+build
+src/harr/lang/*Lexer.java
+src/harr/lang/*Parser.java
+src/harr/lang/*.tokens

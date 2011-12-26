@@ -1,0 +1,19 @@
+% Rawr! testing. It's acting quite like print.
+% It's not actually appending '!' to every string, though..
+
+% Printing ordinary string
+rawr("Ahoy!")
+% => Ahoy!
+
+% Printing numbers
+rawr(3 + 2)
+% => 5
+
+% Printing contatented strings
+rawr("Ahoy" + ", Sea!")
+% => Ahoy, Sea!
+
+% print w/ multiple arguments
+rawr("Here be", "a line break!")
+% => Here be
+% => a line break!

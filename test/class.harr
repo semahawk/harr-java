@@ -1,0 +1,11 @@
+% Class tests
+
+ship Barrel
+  matey explode
+    rawr("BOOM!")
+  ends
+ends
+
+Barrel.new.explode
+% => BOOM!
+
