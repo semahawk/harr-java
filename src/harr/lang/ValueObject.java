@@ -55,7 +55,7 @@ public class ValueObject extends HarrObject {
   public boolean isNil() {
     return value == null;
   }
-  
+
   public Object getValue() {
     return value;
   }

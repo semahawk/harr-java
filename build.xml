@@ -37,6 +37,7 @@
         <include name="**/*.properties"/>
       </fileset>
       <zipfileset src="vendor/antlr-3.1.1.jar" includes="**/*"/>
+      <zipfileset src="vendor/jline-1.0.jar" includes="**/*"/>
       <manifest>
         <attribute name="Main-Class" value="harr.Main"/>
       </manifest>
