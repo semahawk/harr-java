@@ -4,6 +4,7 @@ import java.io.Reader;
 import java.io.StringReader;
 import java.io.FileReader;
 
+import harr.Interactive;
 import harr.Version;
 import harr.lang.Bootstrapper;
 
@@ -20,21 +21,20 @@ public class Main {
     Reader reader = null;
     boolean debug = false;
     
-    for (int i = 0; i < args.length; i++) {
-      if (args[i].equals("-e")) reader = new StringReader(args[++i]);
-      else if (args[i].equals("-d")) debug = true;
-      else if (args[i].equals("--version")) {
-        System.out.println("Harr! version " + Version.MAJOR + "." + Version.MINOR + "." + Version.PATCH);
-        System.exit(1);
+    if (args.length >= 1){
+      for (int i = 0; i < args.length; i++) {
+        if (args[i].equals("-e")) reader = new StringReader(args[++i]);
+        else if (args[i].equals("-d")) debug = true;
+        else if (args[i].equals("--version")) {
+          System.out.println("Harr! version " + Version.MAJOR + "." + Version.MINOR + "." + Version.PATCH);
+          System.exit(1);
+        }
+        else reader = new FileReader(args[i]);
       }
-      else reader = new FileReader(args[i]);
+
+      Bootstrapper.run().eval(reader);
+    } else {
+      Interactive.run();
     }
-    
-    if (reader == null) {
-      usage();
-      System.exit(1);
-    }
-    
-    Bootstrapper.run().eval(reader);
   }
 }

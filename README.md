@@ -41,9 +41,10 @@ Simple, isn't it?
 
     bin/harr examples/guesswhat.harr
 
-That's pretty much it! T'e last thin', could be checkin' t'a version:
+Runnin' without any arrrrgs would sta't the REPL.
 
-    bin/harr --version
+    bin/harr
+
 
 General language structure
 ---------------------------
@@ -82,7 +83,7 @@ What directories are what?
 </tr>
 <tr>
   <td><pre>vendor</pre></td>
-  <td>At the moment it contains ANTLR which compiles .g files</td>
+  <td>Contains additional sources like ANTLR and JLine</td>
 </tr>
 </table>  
 
